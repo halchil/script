@@ -10,6 +10,7 @@ docker rm -f $(docker ps -aq)
 docker network prune -f
 
 # Remove all volumes
-docker volume prune -f
+#docker volume prune -f
+docker volume rm $(docker volume ls -q)
 
 echo "Docker cleanup completed: All containers (running and stopped), networks, and volumes have been removed."
