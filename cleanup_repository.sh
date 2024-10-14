@@ -15,7 +15,7 @@ fi
 
 # GitHubからリポジトリをクローンする
 echo "Cloning the repository from GitHub..."
-git clone "https://github.com/halchil/$repo_name.git" "/home/mainte/"
+git clone "https://github.com/halchil/$repo_name.git" #"/home/mainte/"
 
 # 完了メッセージ
 echo "Repository $repo_name has been cloned successfully."
