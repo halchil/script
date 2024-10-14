@@ -17,5 +17,9 @@ fi
 echo "Cloning the repository from GitHub..."
 git clone "https://github.com/halchil/$repo_name.git" #"/home/mainte/"
 
+# 所有者とグループをmainte:mainteに変更する
+echo "Changing owner and group to mainte:mainte..."
+chown -R mainte:mainte "/home/mainte/$repo_name"
+
 # 完了メッセージ
 echo "Repository $repo_name has been cloned successfully."
