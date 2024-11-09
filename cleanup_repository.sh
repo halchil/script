@@ -5,7 +5,7 @@ echo "Please enter the repository name:"
 read repo_name
 
 # 該当のリポジトリを削除する
-repo_dir="/home/mainte/$repo_name"
+repo_dir="./$repo_name"
 if [ -d "$repo_dir" ]; then
     echo "Removing the repository directory: $repo_dir"
     rm -rf "$repo_dir"
